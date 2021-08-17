@@ -45,7 +45,7 @@ def EccMultiply(xs,ys,Scalar): # Double & add. EC Multiplication, Not true multi
             Qx,Qy=ECadd(Qx,Qy,xs,ys); # print "ADD", Qx; print
     return (Qx,Qy)
 
-print; print "******* Public Key Generation *********"
+print; print 
 xPublicKey, yPublicKey = EccMultiply(Gx,Gy,privKey)
 print "the private key (in base 10 format):"; print privKey; print
 print "the uncompressed public key (starts with '04' & is not the public address):"; print "04",xPublicKey,yPublicKey
